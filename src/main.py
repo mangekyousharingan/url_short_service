@@ -1,6 +1,10 @@
-def main():
-    print("Hello from url-short-service!")
+from fastapi import FastAPI
+
+from src.adapters.fastapi.api import api_router
 
 
-if __name__ == "__main__":
-    main()
+print("Hello from url-short-service!")
+
+app = FastAPI()
+
+app.include_router(api_router)
