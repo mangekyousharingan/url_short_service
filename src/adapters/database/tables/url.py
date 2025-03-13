@@ -11,4 +11,3 @@ class User(Base):
     url: Mapped[str] = mapped_column(String(64), nullable=False)
     short_code: Mapped[str] = mapped_column(String(32), nullable=False)
     access_count: Mapped[int] = mapped_column(Integer, nullable=False)
-
